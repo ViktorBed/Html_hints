@@ -1,29 +1,35 @@
 * {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
-:root{
-  --Text-Gray-900: #18191F;
-  --Brand-Primary: #4CAF4F;
-  --Neutral-Silver: #F5F7FA;
-  --Default-White: #FFF;
-  --Neutral-D_Grey: #4D4D4D;
-  --Neutral-Grey:#717171;
-  --Neutral-L_Grey: #89939E
+
+:root {
+    overflow-X: hidden;
+    --Text-Gray-900: #18191F;
+    --Brand-Primary: #4CAF4F;
+    --Neutral-Silver: #F5F7FA;
+    --Default-White: #FFF;
+    --Neutral-D_Grey: #4D4D4D;
+    --Neutral-Grey: #717171;
+    --Neutral-L_Grey: #89939E;
+    --Neutral-Black: #263238;
+    --Text-Gray-300: #D9DBE1;
+
+
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 

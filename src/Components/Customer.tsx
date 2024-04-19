@@ -1,11 +1,19 @@
-import {TImg} from "@/utils";
+import {blueIcon, TImg} from "@/utils";
+import Logo2 from "@/utils/svg/Logo2";
+import Logo3 from "@/utils/svg/Logo3";
+import Logo4 from "@/utils/svg/Logo4";
+import Logo5 from "@/utils/svg/Logo5";
+import Logo6 from "@/utils/svg/Logo6";
+import Arrow from "@/utils/svg/arrow";
 
 export function Customer() {
+    const log = [Logo2, Logo3, Logo4, Logo5, Logo6];
+
     return (
         <>
-            <div className="cust">
+            <div className="customer">
                 <img src={TImg} alt=""/>
-                <div className="cust_cover">
+                <div className="customer_cover">
                     <div className="content">
                         <div className="content_text">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
                             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed
@@ -21,7 +29,18 @@ export function Customer() {
                             <div className="bot_text_grey">British Dragon Boat Racing Association</div>
                         </div>
                     </div>
-
+                    <div className="logos_stack">
+                        <div className="logo_map">
+                            <img src={blueIcon} alt=""/>
+                            {log.map((Logo, index) => (
+                                <Logo key={index}/>
+                            ))}
+                        </div>
+                        <div className="meet">
+                            Meet all customers
+                            <Arrow/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

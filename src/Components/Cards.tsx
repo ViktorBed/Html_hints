@@ -23,7 +23,7 @@ export function Cards() {
             {cardData.map((card, index) => (
                 <div className="card" key={index}>
                     <div className="card_top">
-                        <img src={card.imgSrc} alt={card.title} />
+                        <img src={card.imgSrc} alt={card.title}/>
                         <div className="card_top_text">{card.title}</div>
                     </div>
                     <div className="card_text">{card.description}</div>

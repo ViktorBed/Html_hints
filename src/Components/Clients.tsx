@@ -16,7 +16,7 @@ export function Clients() {
                 </div>
                 <div className="logos">
                     {logos.map((Logo, index) => (
-                        <Logo key={index} />
+                        <Logo key={index}/>
                     ))}
                 </div>
             </div>

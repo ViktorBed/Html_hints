@@ -1,0 +1,236 @@
+@media (max-width: 1500px) {
+    .frames {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .unlock_container, .unlock_bot, .unlock_heading, .unlock_container_text {
+        width: 50vw;
+    }
+
+    .heading_cover p {
+        text-align: center;
+    }
+
+    .achieve {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .heading, .heading_cover {
+        align-items: center;
+        width: 75vw;
+    }
+
+    .customer {
+        flex-direction: column;
+    }
+
+    .content_text {
+        text-align: center;
+        width: 75vw;
+    }
+
+    .foot {
+        padding: 64px 96px;
+        gap: 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .foot, .links {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 40px;
+    }
+
+    .hero_left_text {
+        align-items: center;
+    }
+
+    .unlock_container, .unlock_bot, .unlock_heading, .unlock_container_text {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 48px
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .clients_bot {
+        width: 75vw;
+    }
+
+    .content, .customer_cover {
+        width: 75vw;
+    }
+
+    .logo_map {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos_stack {
+        flex-direction: column;
+    }
+
+    .row {
+        grid-row-gap: 20px;
+        grid-column-gap: 40px;
+    }
+
+    .hamburger {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        scale: .7;
+    }
+
+    .hams {
+        width: 50px;
+        height: 6px;
+        background: var(--Neutral-Black);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all .5s ease-in-out;
+    }
+
+    .hams::before,
+    .hams::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: var(--Neutral-Black);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all .5s ease-in-out;
+    }
+
+    .hams::before {
+        transform: translateY(-16px);
+    }
+
+    .hams::after {
+        transform: translateY(16px);
+    }
+
+    .hamburger.open .hams {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .hamburger.open .hams::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .hamburger.open .hams::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100vw;
+        background-color: var(--Default-White);
+    }
+
+    .navbar.open {
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        gap: 70px;
+        z-index: 1000;
+        height: 100vh;
+        background-color: var(--Default-White);
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .navbar.open .nav, .navbar.open .log_Btn {
+        display: flex;
+        transition: 1s ease-in-out;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .log_Btn, .nav {
+        display: none;
+
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero_left {
+        align-items: center;
+    }
+
+    .green_text, .hero_left_text, .clients_bot {
+        text-align: center;
+    }
+
+    .clients {
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .com_heading {
+        width: 75vw;
+    }
+
+    .unlock {
+        flex-direction: column;
+    }
+
+    .unlock_container {
+        text-align: center;
+        align-items: center;
+    }
+
+    .unlock_container_text, .unlock_container {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .unlock img, .hero img {
+        scale: .8;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 65px;
+    }
+
+    .links {
+        width: auto;
+    }
+}
